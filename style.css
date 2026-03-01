@@ -1,0 +1,163 @@
+body {
+    background: url('images/bk_index.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;        
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;     
+    min-height: 100vh;       
+    margin: 0;               
+}
+
+.quote-container {
+    text-align: center;
+    max-width: 1000px;
+    padding: 0 20px;
+}
+
+.quote {
+    font-family: "Lucida Handwriting", cursive;
+    font-style: italic;
+    color: #FDF5E6; 
+    font-size: 20px;
+    margin: 0; 
+}
+
+
+/* Chenarul principal */
+.form-container {
+    background:#800000;
+    padding: 18px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    border: 5px solid #DAA520;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+
+/* Titlul H2 ca header de formular */
+h2 {
+	font-family: "Lucida Handwriting", cursive;
+    color:#DAA520;
+    font-size: 80px;
+    margin-top: 15px;       
+    margin-bottom: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.title {
+	font-family: "Lucida Handwriting", cursive;
+    font-size: 24px;
+    color:#DAA520;
+    margin-top: 2px;       
+    margin-bottom: 2px;      
+    text-align: center;
+    width: 100%;
+}
+
+/* Container pentru butoane */
+.button-group {
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+}
+
+/* Butoane */
+.btn {
+    text-decoration: none;
+    font-family: "Georgia", cursive;
+    font-style: italic;
+    color: black;
+    background: #FAEBD7;
+    
+    /* Dimensiuni fixe pentru uniformitate */
+    width: 140px; 
+    height: 60px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 5px solid #DAA520;
+    
+    /* Important pentru ca border-ul să nu mărească butonul */
+    box-sizing: border-box; 
+    cursor: pointer;
+}
+
+.button-group .btn {
+    width: 100%; 
+}
+
+/* Containerul pentru butoanele de acțiune */
+.action-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    margin-top: 10px;
+    width: auto;
+}
+.action-row .btn {
+    width: 140px; /* Toate cele 4 butoane vor avea fix 140px */
+}
+.btn:hover {
+    background:#DAA520;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.delete-btn {
+    width: 400px;
+    height: 60px;
+    margin-top: 20px;
+}
+
+/* Stil general pentru tabel */
+table {
+    width: 100%;
+    margin: 30px auto;
+    border-collapse: collapse; /* Elimină spațiile duble dintre celule */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundal semi-transparent */
+    backdrop-filter: blur(5px); /* Efect de sticlă mată  */
+    color: #FDF5E6;
+    font-family: 'Georgia', cursive;
+    border: 5px solid #DAA520;
+}
+.table-container {
+    width: 80%;           
+    overflow-x: auto;  /* Apare bara de scroll orizontală */
+    margin: 20px auto;
+    border: 3px solid #DAA520;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5); 
+}
+/* Header-ul tabelului (Capul de tabel) */
+th {  
+    padding: 10px;
+    font-size: 14px;
+    border-bottom: 3px solid #DAA520;
+    white-space: nowrap;
+}
+
+/* Celulele tabelului */
+td {
+    padding: 12px 10px;
+    text-align: center;
+    white-space: nowrap;
+}
+tr:hover {
+    background-color: rgba(218, 165, 32, 0.2);
+    transition: 0.3s;
+}
+
+
+
